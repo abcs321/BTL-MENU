@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -323,6 +324,34 @@ body {
 .footer-bottom p {
   margin: 0;
 }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slideInFromRight 1.25s ease-out forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1.25s ease-out forwards;
+}
+
     </style>
 </head>
 <body>
@@ -349,7 +378,7 @@ body {
         </main>
         <div class="container">
             <div class="card">
-                <div class="card-image">
+                <div class="card-image slide-in-left">
                     <img src="https://36pho.com/thumbnail/upload/2023/05/04/pho-co-ha-noi-01-2-1.jpg?w=768&h=768&cr=1" alt="Phố cổ Hà Nội">
                 </div>
                 <div class="card-content">
@@ -364,7 +393,7 @@ body {
             </div>
     
             <div class="card">
-                <div class="card-image">
+                <div class="card-image slide-in-right" style="animation-delay: 1s">
                     <img src="https://cdn.xanhsm.com/2024/11/e8c89da9-lang-chu-tich-ho-chi-minh-1.jpg" alt="Lăng Chủ tịch Hồ Chí Minh">
                 </div>
                 <div class="card-content">
@@ -376,7 +405,7 @@ body {
             </div>
     
             <div class="card">
-                <div class="card-image">
+                <div class="card-image slide-in-left" style="animation-delay: 1.25s">
                     <img src="https://image-tc.galaxy.tf/wipng-daexn19ej5lhhexs5yjcrc003/vietnam-trip-1.png" alt="Hồ Hoàn Kiếm">
                 </div>
                 <div class="card-content">
@@ -392,7 +421,7 @@ body {
             </div>
     
             <div class="card">
-                <div class="card-image">
+                <div class="card-image slide-in-right" style="animation-delay: 1.65s">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hanoi_Temple_of_Literature_%28cropped%29.jpg/1200px-Hanoi_Temple_of_Literature_%28cropped%29.jpg" alt="Văn Miếu Quốc Tử Giám">
                 </div>
                 <div class="card-content">
